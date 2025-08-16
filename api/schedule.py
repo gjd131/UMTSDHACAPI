@@ -17,7 +17,7 @@ class handler(BaseHTTPRequestHandler):
         session = getRequestSession(username, password)
 
         schedulePageContent = session.get(
-            "https://hac.friscoisd.org/HomeAccess/Content/Student/Classes.aspx").text
+            "https://hac.mckinneyisd.net/HomeAccess/Content/Student/Classes.aspx").text
 
         parser = BeautifulSoup(schedulePageContent, "lxml")
 
