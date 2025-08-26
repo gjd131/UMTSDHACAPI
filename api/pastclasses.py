@@ -86,7 +86,7 @@ class handler(BaseHTTPRequestHandler):
     }
 
     pastCoursesPageContent = session.post(
-        "https://hac.mckinneyisd.net/HomeAccess/Content/Student/Assignments.aspx",
+        "https://esp41pehac.eschoolplus.powerschool.com/HomeAccess/Content/Student/Assignments.aspx",
         data=pastCoursesRequestPayload,
         headers=pastCoursesRequestHeaders
     ).text
