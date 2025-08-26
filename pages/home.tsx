@@ -17,7 +17,7 @@ const Home: React.FC = () => {
                     <h3 className="text-2xl font-bold mt-10 my-2 text-headline">Base API URL</h3>
                     <CopyBlock
                         language="javascript"
-                        text="https://friscoisdhacapi.vercel.app"
+                        text="https://umtsdhacapi.vercel.app"
                         showLineNumbers={false}
                         theme={solarizedLight}
                         wrapLines={true}
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
                     <h3 className="text-2xl font-bold mt-10 my-2 text-headline">Example API Request</h3>
                     <CopyBlock
                         language="javascript"
-                        text={`axios.get("friscoisdhacapi.vercel.app${apiRoutes[0].exampleRequest}").then((res) => {
+                        text={`axios.get("umtsdhacapi.vercel.app${apiRoutes[0].exampleRequest}").then((res) => {
     console.log(res.data);
 }).catch((error) => {
     console.log(error);
@@ -73,7 +73,7 @@ const Home: React.FC = () => {
                     </div>
 
                     <h3 className="text-2xl font-bold mt-10 my-2 text-headline">Behind The Scenes</h3>
-                    <p>The API uses sends HTTP POST requests to Frisco ISD HAC servers with a username and password.</p>
+                    <p>The API uses sends HTTP POST requests to UMTSD HAC servers with a username and password.</p>
                     <p>If the login is authenticated, HAC responds with an HTML page with student information.</p>
                     <p>The resulting HTML page is then parsed and the requested information is extracted from the markup.</p>
 
