@@ -11,7 +11,7 @@ class handler(BaseHTTPRequestHandler):
         self.send_header('Content-type', 'text/html')
         self.end_headers()
         self.wfile.write("""
-    <h1>Frisco ISD HAC API</h1>
+    <h1>UMTSD HAC API</h1>
 	<p>Documentation:</p>
 	<a href="https://umtsdhacapi.vercel.app/" target="_blank">https://umtsdhacapi.vercel.app/</a>
     """.encode(encoding="utf_8"))
