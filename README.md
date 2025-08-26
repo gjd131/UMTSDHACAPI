@@ -1,8 +1,8 @@
 # Fork Stuff
-Forked from the Frisco ISD to work for McKinney ISD
+Forked from the McKinney ISD to work for Upper Moreland Township SD
 
-# McKinney ISD HAC API  
-REST API to access student data from Home Access Center (McKinney ISD)   
+# Upper Moreland Township SD HAC API  
+REST API to access student data from Home Access Center (Upper Moreland Township SD)   
 
 # API Documentation
 https://friscoisdhacapi.vercel.app/
