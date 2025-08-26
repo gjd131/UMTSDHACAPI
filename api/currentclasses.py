@@ -18,7 +18,7 @@ class handler(BaseHTTPRequestHandler):
         session = getRequestSession(username, password)
 
         coursesPageContent = session.get(
-            "https://hac.mckinneyisd.net/HomeAccess/Content/Student/Assignments.aspx").text
+            "https://esp41pehac.eschoolplus.powerschool.com/HomeAccess/Content/Student/Assignments.aspx").text
 
         parser = BeautifulSoup(coursesPageContent, "lxml")
 
