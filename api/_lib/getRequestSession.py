@@ -5,7 +5,7 @@ import lxml
 def getRequestSession(username, password):
     requestSession = requests.session()
 
-    loginScreenResponse = requestSession.get("https://hac.mckinneyisd.net/HomeAccess/Account/LogOn?ReturnUrl=%2fHomeAccess%2f").text
+    loginScreenResponse = requestSession.get("https://esp41pehac.eschoolplus.powerschool.com/HomeAccess/Account/LogOn?ReturnUrl=%2fHomeAccess%3fSiteCode%3dumtlive&SiteCode=umtlive").text
 
     parser =  BeautifulSoup(loginScreenResponse, "lxml")
 
@@ -33,7 +33,7 @@ def getRequestSession(username, password):
     }
 
     pageDOM = requestSession.post(
-        "https://hac.mckinneyisd.net/HomeAccess/Account/LogOn?ReturnUrl=%2fHomeAccess%2f",
+        "https://esp41pehac.eschoolplus.powerschool.com/HomeAccess/Account/LogOn?ReturnUrl=%2fHomeAccess%3fSiteCode%3dumtlive&SiteCode=umtlive",
         data=requestPayload,
         headers=requestHeaders
     )
